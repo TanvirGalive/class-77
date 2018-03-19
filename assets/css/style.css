@@ -1,0 +1,107 @@
+/* Base CSS */
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700');
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 400;
+}
+body {
+	font-family: 'Roboto Slab', serif;
+}
+a:hover { text-decoration: none }
+.section-padding{padding: 50px 0;}
+.feature-1 .feature-bg{background-image: url(../img/feature-item-1.jpg);}
+.feature-2 .feature-bg{background-image: url(../img/feature-item-2.jpg);}
+.feature-3 .feature-bg{background-image: url(../img/feature-item-3.jpg);}
+.feature-4 .feature-bg{background-image: url(../img/feature-item-4.jpg);}
+.single-feature-item {
+    position: relative;
+    z-index: 1;
+}
+.feature-bg {
+    position: absolute;
+    z-index: -1;
+    top: 50px;
+    left: 25%;
+    content: "";
+    height: 100%;
+    width: 50%;
+    background-position: center;
+    background-size: cover;
+    background-color: #ddd;
+}
+.single-feature-content {
+    background-color: #fff;
+    box-shadow: 0 1px 5px #ddd;
+    padding: 40px;
+    padding-top: 60px;
+    line-height: 1.8;
+    font-size: 16px;
+    padding-left: 100px;
+    position: relative;
+    border-bottom: 3px solid #F25E32;
+}
+
+.single-feature-content p {
+    color: #696969;
+}
+
+.single-feature-content h2 {
+    font-size: 25px;
+    color: #333;
+}
+
+.feature-no {
+    font-size: 49px;
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    opacity: .2;
+    z-index: 1;
+}
+
+.feature-no::after {
+    position: absolute;
+    content: "";
+    right: 14px;
+    top: 10px;
+    height: 100px;
+    width: 1px;
+    background: #333;
+    transform: rotate(40deg);
+}
+
+.feature-bg {
+    bottom: -50px;
+}
+
+.feature-2 .single-feature-content {
+    border-color: #4BC991;
+}
+.feature-3 .single-feature-content {
+    border-color: #AD7BF5;
+}
+.feature-4 .single-feature-content {
+    border-color: #F8B74F;
+}
